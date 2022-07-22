@@ -11344,7 +11344,7 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 
 /* Hide the images by default */
 .mySlides {
-  display: none;
+  /* display: none; */
 }
 
 /* Next & previous buttons */
@@ -11897,4 +11897,10 @@ tbody {
   font-weight: 700;
   color: #fbb900;
   font-family: "Nunito", sans-serif;
+}
+.nav-item {
+  list-style: none;
+}
+.nav-item .nav-link{
+  display: flex;
 }
