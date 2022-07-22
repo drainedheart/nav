@@ -64,7 +64,7 @@
   --bs-body-bg: #fff;
 }
 * {
-  outline: 2px solid red !important;  
+  /* outline: 2px solid red !important;   */
   box-sizing: border-box;
 }
 
