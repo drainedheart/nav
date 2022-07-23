@@ -3943,11 +3943,20 @@ textarea.form-control-lg {
   margin-bottom: 0;
   list-style: none;
 }
+.nav-link:hover {
+  color: #e9ebef;
+  background: #f6f9ff;
+}
 
 .nav-link {
+  gap: 10px;
+  margin-bottom: -6px;
   display: block;
   padding: 0.5rem 1rem;
-  color: #0d6efd;
+  align-items: center;
+  font-weight: 600;
+  font-size: small;
+  color: #354052;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -3957,7 +3966,7 @@ textarea.form-control-lg {
   }
 }
 .nav-link:hover, .nav-link:focus {
-  color: #0a58ca;
+  color: #354052;
 }
 .nav-link.disabled {
   color: #6c757d;
@@ -11428,9 +11437,10 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 120px;
-  width: 100px;
+  height: 110px;
+  width: 90px;
   border: 2px #e9ebef solid;
+  background: #e9ebef;
   border-radius: 8px;
   box-sizing: border-box;
   transition: 0.5s;
@@ -11443,28 +11453,28 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 }
 .icon-container .bank {
   position: relative;
-  height: 70px;
+  height: 66px;
   width: 70px;
   margin-top: 10px;
   margin-bottom: 5px;
 }
 .icon-container .control {
   position: relative;
-  height: 80px;
+  height: 68px;
   width: 50px;
   margin-top: 12px;
   margin-bottom: 0px;
 }
 .icon-container .services {
   position: relative;
-  height: 70px;
+  height: 66px;
   width: 75px;
   margin-top: 10px;
   margin-bottom: 4px;
 }
 .icon-container .solution {
   position: relative;
-  height: 60px;
+  height: 58px;
   width: 70px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -11487,40 +11497,40 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   position: relative;
   height: 50px;
   width: 70px;
-  margin-top: 10px;
+  margin-top: 14px;
   margin-bottom: 20px;
 }
 .icon-container .bill {
   position: relative;
-  height: 70px;
+  height: 61px;
   width: 70px;
   margin-top: 10px;
   margin-bottom: 9px;
 }
 .icon-container .report2 {
   position: relative;
-  height: 70px;
+  height: 66px;
   width: 70px;
   margin-top: 10px;
   margin-bottom: 5px;
 }
 .icon-container .report {
   position: relative;
-  height: 70px;
+  height: 66px;
   width: 60px;
   margin-top: 10px;
   margin-bottom: 5px;
 }
 .icon-container .customer {
   position: relative;
-  height: 70px;
+  height: 63px;
   width: 70px;
   margin-top: 10px;
   margin-bottom: 6px;
 }
 .icon-container .cheque {
   position: relative;
-  height: 70px;
+  height: 63px;
   width: 70px;
   margin-top: 8px;
   margin-bottom: 8px;
@@ -11538,8 +11548,8 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 50px;
-  width: 50px;
+  height: 48px;
+  width: 44px;
   border: 1px #e9ebef solid;
   border-radius: 5px;
   box-sizing: border-box;
@@ -11825,7 +11835,7 @@ tbody {
 }
 
 .col-6 {
-  width: 51vw;
+  width: 49vw;
   padding: 0px 20px 10px 20px;
 }
 
@@ -11903,4 +11913,58 @@ tbody {
 }
 .nav-item .nav-link{
   display: flex;
+}
+.nav-tabs-bordered .nav-link {
+  margin-bottom: -2px;
+  border: none;
+  color: #2c384e;
+}
+.nav-tabs-bordered .nav-link:hover, .nav-tabs-bordered .nav-link:focus {
+  color: #000000;
+}
+.nav-tabs-bordered .nav-link.active {
+  background-color: #fff;
+  color: #000000;
+  border-bottom: 2px solid #000000;
+}
+.sidebar-nav .nav-link {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 600;
+  color: #354052;
+  transition: 0.3;
+  background: #f6f9ff;
+  padding: 10px 15px;
+  border-radius: 4px;
+}
+.sidebar-nav .nav-link i {
+  font-size: 16px;
+  margin-right: 10px;
+  color: #354052;
+}
+.sidebar-nav .nav-link.collapsed {
+  color: #354052;
+  background: #fff;
+}
+.sidebar-nav .nav-link.collapsed i {
+  color: #899bbd;
+}
+.sidebar-nav .nav-link:hover {
+  color: #354052;
+  background: #f6f9ff;
+}
+.sidebar-nav .nav-link:hover i {
+  color: #354052;
+}
+.sidebar-nav .nav-link .bi-chevron-down {
+  margin-right: 0;
+  transition: transform 0.2s ease-in-out;
+}
+.sidebar-nav .nav-link:not(.collapsed) .bi-chevron-down {
+  transform: rotate(180deg);
+}
+
+.sidebar-nav .nav-item {
+  margin-bottom: 5px;
 }
