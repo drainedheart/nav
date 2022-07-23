@@ -11451,6 +11451,12 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   font-weight: 900;
   color: #354052;
 }
+h3 {
+  font-size: 14px;
+  font-weight: 900;
+  color: #354052;
+  margin-bottom: 10px;
+}
 .icon-container .bank {
   position: relative;
   height: 66px;
