@@ -11917,6 +11917,10 @@ tbody {
 .nav-item {
   list-style: none;
 }
+.nav-item:hover {
+  color: #e9ebef;
+  background: #f6f9ff;
+}
 .nav-item .nav-link{
   display: flex;
 }
